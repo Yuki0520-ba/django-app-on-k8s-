@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: polls-config
+data:
+  DJANGO_ALLOWED_HOSTS: "*"
+  STATIC_ENDPOINT_URL: "https://for-polls-test.s3.ap-northeast-1.amazonaws.com/"
+  STATIC_BUCKET_NAME: "for-polls-test"
+  DJANGO_LOGLEVEL: "info"
+  DEBUG: "True"
+  DATABASE_ENGINE: "django.db.backends.mysql"
